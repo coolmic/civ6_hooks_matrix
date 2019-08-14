@@ -1,0 +1,23 @@
+# misc
+.DS_Store
+
+# IDEA
+.idea
+
+# python stuff
+dist/
+__pycache__
+*.py[cod]
+*.egg-info/
+
+#virtual env
+/pyvenv.cfg
+/lib
+/bin
+/var/log
+
+# dotenv
+.env
+
+# room mapping
+mapping.json
