@@ -35,7 +35,7 @@ def civ():
                 'errorCode': 'NOT_ASSOCIATED_TO_A_ROOM',
             })
 
-        content = "Hey {:s}, it's your turn to play (turn {:d})".format(user, turn)
+        content = "Hey {:s}, it's your turn to play (turn {:s})".format(user, turn)
         response = client.send_message(mapping.get(game_name), content)
         return json.dumps({
             'success': True,
