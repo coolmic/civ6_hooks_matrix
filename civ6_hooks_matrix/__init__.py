@@ -2,7 +2,7 @@ import sys
 from flask import Flask
 from . import env
 from .services.init_flask_loggers import init_flask_loggers
-from .services.rooms import parse_room_mapping_file
+from .services.mapping import parse_mapping_file
 from .routes.civ import civ_pages
 
 
@@ -11,7 +11,7 @@ def usage():
 
 
 def _real_main(file):
-    rooms = parse_room_mapping_file(file)
+    parse_mapping_file(file)
 
     app = Flask(__name__)
     init_flask_loggers(app)

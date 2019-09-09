@@ -1,3 +1,8 @@
 {
-  "civ_game_name": "matrix_room_id"
+  "rooms": {
+    "civ_game_name": "matrix_room_id"
+  },
+  "users": {
+    "username": "matrix_user_id"
+  }
 }
